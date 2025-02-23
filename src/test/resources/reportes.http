@@ -1,0 +1,17 @@
+### Crear un reporte
+POST http://localhost:8080/api/reportes
+Content-Type: application/json
+
+{
+    "titulo": "Se me perdió el perro",
+    "descripcion": "Se me perdió el perro, es de color blanco y tiene una mancha en el ojo izquierdo",
+    "ubicacion": {
+        "latitud": 4.531010,
+        "longitud": -75.640557
+    },
+    "rutaImagenes": ["imagen1.jpg", "imagen2.jpg"],
+    "categoria": "MASCOTA",
+    "idUsuario": "23232323"
+}
+
+### Probar las demás funcionalidades

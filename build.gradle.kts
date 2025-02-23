@@ -4,11 +4,9 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
 }
 
-
 group = "co.edu.uniquindio"
 version = "0.0.1-SNAPSHOT"
 description = "Breve descripción de la aplicación"
-
 
 java {
     toolchain {
@@ -16,18 +14,15 @@ java {
     }
 }
 
-
 configurations {
     compileOnly {
         extendsFrom(configurations.annotationProcessor.get())
     }
 }
 
-
 repositories {
     mavenCentral()
 }
-
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -37,7 +32,6 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
-
 
 tasks.withType<Test> {
     useJUnitPlatform()
