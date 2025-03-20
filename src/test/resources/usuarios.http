@@ -1,8 +1,8 @@
 ### Obtener todos los usuarios
-GET http://localhost:8080/api/usuarios
+GET http://localhost:8080/api/usuarios?pagina=0
 
 ### Obtener todos los usuarios de Armenia
-GET http://localhost:8080/api/usuarios?ciudad=Armenia
+GET http://localhost:8080/api/usuarios?pagina=0&ciudad=armenia
 
 ### Obtener un usuario por su id
 GET http://localhost:8080/api/usuarios/1
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 {
   "nombre": "Carlos",
-  "ciudad": "Armenia",
+  "ciudad": "ARMENIA",
   "direccion": "Calle 123",
   "telefono": "121212",
   "email": "carlos@email.com",
@@ -25,9 +25,9 @@ PUT http://localhost:8080/api/usuarios
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": "aaa",
   "nombre": "Carlos",
-  "ciudad": "Armenia",
+  "ciudad": "ARMENIA",
   "direccion": "Calle 123",
   "email": "carlos@email.com",
   "password": "123456"
